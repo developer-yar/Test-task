@@ -1,0 +1,9 @@
+*.DS_Store
+._*
+dist
+node_modules/
+.env
+babel.config.json
+postcss.config.js
+tsconfig.json
+webpack.config.js

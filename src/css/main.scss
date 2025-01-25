@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+html {
+  min-inline-size: 320px;
+
+  @include for(desktop) {
+    font-size: 16px;
+  }
+
+  @include for(tablet) {
+    font-size: 14px;
+  }
+
+  @include for(phone) {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.main {
+  max-inline-size: 1280px;
+  margin: auto;
+  display: grid;
+  gap: 32px;
+
+  @include for(desktop) {
+    padding: 32px;
+    gap: 32px;
+  }
+
+  @include for(phone) {
+    padding: 16px;
+    gap: 16px;
+  }
+}
